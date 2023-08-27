@@ -2,7 +2,7 @@
   <nav class='navbar fixed-top navbar-expand-lg navbar-light navbar-white border-bottom'>
     <div class="container">
       <nuxt-link to='/' class='navbar-brand'>
-        <img src='images/logo/logo.png' height='60' width='60' />
+        <img src='/images/logo/logo.png' height='60' width='60' />
       </nuxt-link>
       <button class='navbar-toggler border-0 border-radius-0' type='button' data-bs-toggle='collapse'
         data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false'

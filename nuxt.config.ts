@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: process.env.baseUrl || '/macthodology-nuxt',
+    baseURL: '/macthodology-nuxt',
     buildAssetsDir: 'assets',
   },
   devtools: { enabled: true },

@@ -14,7 +14,8 @@
     "@popperjs/core": "^2.11.8",
     "@types/node": "^18.17.3",
     "gh-pages": "^6.0.0",
-    "nuxt": "^3.6.5"
+    "nuxt": "^3.6.5",
+    "sass": "^1.66.1"
   },
   "dependencies": {
     "bootstrap": "^5.3.1"

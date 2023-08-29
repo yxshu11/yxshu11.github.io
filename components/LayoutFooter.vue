@@ -27,11 +27,7 @@
   </footer>
 </template>
 
-<script>
-export default {
-  name: 'Footer'
-}
-</script>
+<script setup lang="js"></script>
 
 <style lang='scss' scoped>
 .footer {

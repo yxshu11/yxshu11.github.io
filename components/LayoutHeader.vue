@@ -50,11 +50,7 @@
   </nav>
 </template>
 
-<script>
-export default {
-  name: 'Header'
-}
-</script>
+<script setup lang="js"></script>
 
 <style lang='scss' scoped>
 .navbar-dropdown-toggle::after {

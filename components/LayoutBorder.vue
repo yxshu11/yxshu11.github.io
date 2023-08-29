@@ -7,11 +7,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Border'
-}
-</script>
+<script setup lang="js"></script>
 
 <style lang='scss' scoped>
 #border-top,

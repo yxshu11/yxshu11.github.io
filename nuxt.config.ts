@@ -1,5 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
   app: {
     baseURL: '/macthodology-nuxt',
     buildAssetsDir: 'assets',
@@ -10,5 +10,11 @@ export default defineNuxtConfig({
   ],
   plugins: [
     { src: '~/plugins/bootstrap.js', mode: 'client' }
-  ]
+  ],
+  runtimeConfig: {
+    public: {
+      ctfSpaceId: process.env.CTF_SPACE_ID,
+      ctfCdaAccessToken: process.env.CTF_CDA_ACCESS_TOKEN
+    }
+  }
 })

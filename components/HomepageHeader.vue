@@ -26,8 +26,6 @@
 </template>
 
 <script setup lang="js">
-import { defineProps } from "vue";
-
 const props = defineProps({
   imgSrc: String,
   imgAlt: String,

@@ -12,8 +12,6 @@
 </template>
 
 <script setup lang="js">
-import { defineProps } from "vue"
-
 const props = defineProps({
   sectionId: String,
   title: String,

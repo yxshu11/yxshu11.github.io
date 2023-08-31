@@ -16,8 +16,6 @@
 </template>
 
 <script setup lang="js">
-import { defineProps } from "vue";
-
 const props = defineProps({
   title: String,
   footerLinks: Array

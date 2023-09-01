@@ -31,6 +31,6 @@ export default defineNuxtConfig({
     '@pinia/nuxt'
   ],
   experimental: {
-    payloadExtraction: true
+    payloadExtraction: false
   }
 })

@@ -28,7 +28,6 @@ export default defineNuxtConfig({
     }
   },
   modules: [
-    '@pinia/nuxt',
-    'nuxt-simple-sitemap'
+    '@pinia/nuxt'
   ]
 })

@@ -71,6 +71,10 @@ const message = ref('')
 const isSubmitted = ref(false)
 const isLoading = ref(false)
 
+useHead({
+  title: 'Contact Me | macthodology',
+})
+
 async function submitForm() {
   isLoading.value = true
 

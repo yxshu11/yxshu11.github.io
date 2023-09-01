@@ -16,6 +16,10 @@ import { computed, defineAsyncComponent } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useStaticPagesStore } from '~/store/staticPages.js'
 
+useHead({
+  title: 'Recommendations | macthodology',
+})
+
 const store = useStaticPagesStore()
 const { fetchStaticPagesContent } = store
 const { getStaticPageByType } = storeToRefs(store)

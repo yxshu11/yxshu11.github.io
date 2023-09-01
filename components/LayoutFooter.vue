@@ -14,9 +14,9 @@
             </nuxt-link>
           </div>
           <div class='col-lg text-center mb-3'>
-            <nuxt-link to='/sitemap.xml' class='btn text-uppercase'>
+            <a href='/sitemap.xml' class='btn text-uppercase'>
               Sitemap
-            </nuxt-link>
+            </a>
           </div>
         </div>
       </div>

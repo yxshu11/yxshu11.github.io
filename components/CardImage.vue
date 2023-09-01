@@ -1,7 +1,7 @@
 <template>
-  <div class='card-image row justify-content-center'>
-    <div class='col-sm-10 col-md-10'>
-      <div class='card rounded-0 border-2 mb-5'>
+  <div class='card-image justify-content-center' :class="{ row: gutter }">
+    <div :class="{ 'col-sm-10': gutter, 'col-md-10': gutter }">
+      <div class='card rounded-0 border-2' :class="gutter ? 'mb-5' : 'mb-3'">
         <div class='card-body text-center p-5'>
           <img :src="image" class='w-100 mb-3' :style="{ width: getImageWidth }" />
 
@@ -29,7 +29,8 @@ const props = defineProps({
   subtitle: String,
   description: String,
   image: String,
-  imageWidth: Number
+  imageWidth: Number,
+  gutter: Boolean
 })
 
 const getImageWidth = computed(() => {

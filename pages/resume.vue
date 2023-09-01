@@ -10,6 +10,7 @@
         v-for="section in staticPage.sections" 
         :key="section" 
         v-bind="section"
+        :gutter="true"
       />
     </div>
   </div>
@@ -32,6 +33,6 @@ const staticPage = computed(() => getStaticPageByType.value('resume'))
 await fetchStaticPagesContent()
 
 function cardTypeComponent(section) {
-  return defineAsyncComponent(() => import(`~/components/${section.type}.vue`))
+  return defineAsyncComponent(() => import(`../components/${section.type}.vue`))
 }
 </script>

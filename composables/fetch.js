@@ -11,6 +11,7 @@ export const fetchContents = async (contentType) => {
 
   const response = await $contentfulClient.getEntries({
     content_type: contentType,
+    include: 10
   })
 
   return response

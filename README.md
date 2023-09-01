@@ -1,63 +1,76 @@
-# Nuxt 3 Minimal Starter
+# macthodology
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[macthodology.com](https://macthodology.com)
 
-## Setup
+## Install
 
-Make sure to install the dependencies:
+### Clone the repository
 
-```bash
-# npm
-npm install
+```shell
+git clone git@github.com:yxshu11/macthodology-nuxt.git
+cd macthodology-nuxt
+```
 
-# pnpm
-pnpm install
+### Setup
 
-# yarn
+Install the following version NodeJs:
+
+```shell
+asdf install nodejs 18.17.1
+```
+
+Install all the dependecies:
+
+```shell
 yarn install
 ```
 
-## Development Server
+### Configure ENV
+
+Configure all the environment variable in `.env` file:
+
+```
+NUXT_PUBLIC_SITE_URL='https://macthodology.com'
+NUXT_PUBLIC_CTF_SPACE_ID=''
+NUXT_PUBLIC_CTF_CDA_ACCESS_TOKEN=''
+NUXT_PUBLIC_WEB3FORMS_ACCESS_KEY=''
+```
+
+
+## Development
+### Local Development Server
 
 Start the development server on `http://localhost:3000`:
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
+```shell
 # yarn
 yarn dev
 ```
 
-## Production
+### Production Envrionment
 
 Build the application for production:
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
+```shell
 yarn build
 ```
 
 Locally preview production build:
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
+```shell
 yarn preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Deployment
+
+Generate the Nuxt Application and asset:
+
+```shell
+yarn generate
+```
+
+Deploy to GitHub pages:
+
+```shell
+yarn deploy
+```

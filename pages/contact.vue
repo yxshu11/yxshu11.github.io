@@ -93,7 +93,6 @@ async function submitForm() {
   })
   const result = await response.json()
   if (result.success) {
-    console.log(result)
     isLoading.value = false
     isSubmitted.value = true
   }

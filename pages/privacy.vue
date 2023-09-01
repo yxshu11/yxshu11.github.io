@@ -11,6 +11,7 @@
         :key="section" 
         v-bind="section"
         :show-title="false"
+        :gutter="true"
       />
     </div>
   </div>
@@ -33,6 +34,6 @@ const staticPage = computed(() => getStaticPageByType.value('privacy-policies'))
 await fetchStaticPagesContent()
 
 function cardTypeComponent(section) {
-  return defineAsyncComponent(() => import(`~/components/${section.type}.vue`))
+  return defineAsyncComponent(() => import(`../components/${section.type}.vue`))
 }
 </script>

@@ -5,8 +5,13 @@
       <p>{{ staticPage.description }}</p>
     </section>
     <div class='container'>
-      <component :is="cardTypeComponent(section)" v-for="section in staticPage.sections" :key="section" v-bind="section"
-        :show-title="false" />
+      <component 
+        :is="cardTypeComponent(section)"
+        v-for="section in staticPage.sections"
+        :key="section"
+        v-bind="section"
+        :gutter="true"
+      />
     </div>
   </div>
 </template>
@@ -28,6 +33,6 @@ const staticPage = computed(() => getStaticPageByType.value('recommendations'))
 await fetchStaticPagesContent()
 
 function cardTypeComponent(section) {
-  return defineAsyncComponent(() => import(`~/components/${section.type}.vue`))
+  return defineAsyncComponent(() => import(`../components/${section.type}.vue`))
 }
 </script>

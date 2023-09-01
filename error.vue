@@ -5,10 +5,10 @@
     <Head>
       <title>{{ error.statusCode }} | macthodology</title>
     </Head>
-    
+
     <div class='d-flex justify-content-center align-items-center error-d-flex-container p-5'>
       <div class='text-center'>
-        <img src='images/logo/logo.png' width='200'  class='mb-5' />
+        <img src='/images/logo/logo.png' width='200'  class='mb-5' />
         <h1>{{ error.statusCode }}</h1>
         <h3 class='mb-5'>
           {{ error.statusMessage }}

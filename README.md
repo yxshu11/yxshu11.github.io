@@ -7,8 +7,8 @@
 ### Clone the repository
 
 ```shell
-git clone git@github.com:yxshu11/macthodology-nuxt.git
-cd macthodology-nuxt
+git clone git@github.com:yxshu11/yxshu11.github.io.git
+cd yxshu11.github.io
 ```
 
 ### Setup

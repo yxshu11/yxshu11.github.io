@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   ssr: true,
   app: {
-    baseURL: '/macthodology-nuxt',
+    baseURL: '/',
     buildAssetsDir: 'assets',
     head: {
       title: 'macthodology',

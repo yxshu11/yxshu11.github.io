@@ -1,1 +1,0 @@
-import{_ as a,c,m as o,a as s,H as r,o as p,I as d}from"./entry.0ca5719b.js";import m from"./LayoutHeader.89dd8824.js";import u from"./LayoutFooter.e4da2adf.js";const l={},i={class:"main-app"},f={class:"app-container"};function x(e,y){const t=d,_=m,n=u;return p(),c("div",i,[o(t),o(_),s("div",f,[r(e.$slots,"default")]),o(n)])}const L=a(l,[["render",x]]);export{L as default};

@@ -1,1 +1,0 @@
-import{G as e}from"./entry.0ca5719b.js";const c=async t=>{const{$contentfulClient:n}=e();return await n.getEntry(t,{include:10})},r=async t=>{const{$contentfulClient:n}=e();return await n.getEntries({content_type:t,include:10})};export{r as a,c as f};

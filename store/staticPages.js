@@ -28,7 +28,7 @@ export const useStaticPagesStore = defineStore('staticPages', {
               sections: entry.fields.cardSection.map((section) => {
                 const fields = {}
 
-                console.log(section)
+                // console.log(section)
 
                 Object.keys(section.fields).forEach(function (key, index) {
                   if (section.fields[key].nodeType && section.fields[key].nodeType === 'document') {
@@ -46,7 +46,7 @@ export const useStaticPagesStore = defineStore('staticPages', {
             }
           })
 
-          console.log(this.staticPages[0])
+          // console.log(this.staticPages[0])
           
           this.loaded = true
         })

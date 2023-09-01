@@ -3,6 +3,14 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/macthodology-nuxt',
     buildAssetsDir: 'assets',
+    head: {
+      title: 'macthodology',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'macthodology.com' }
+      ]
+    }
   },
   devtools: { enabled: true },
   css: [
@@ -15,7 +23,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       ctfSpaceId: process.env.CTF_SPACE_ID,
-      ctfCdaAccessToken: process.env.CTF_CDA_ACCESS_TOKEN
+      ctfCdaAccessToken: process.env.CTF_CDA_ACCESS_TOKEN,
+      web3formsAccessKey: process.env.WEB3FORMS_ACCESS_KEY
     }
   },
   modules: [
